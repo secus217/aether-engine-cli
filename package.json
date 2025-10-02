@@ -1,0 +1,58 @@
+{
+  "name": "aether-engine-cli",
+  "version": "1.0.9",
+  "description": "Aether Engine CLI - A powerful CLI tool for deploying and managing applications with pre-built binaries",
+  "main": "bin/aether.js",
+  "bin": {
+    "aether": "bin/aether.js"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "preuninstall": "node scripts/uninstall.js",
+    "build": "cargo build --release",
+    "build-all": "node scripts/build-all.js",
+    "test": "cargo test"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secus217/aether-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "deployment",
+    "kubernetes",
+    "rust",
+    "aether",
+    "serverless",
+    "devops"
+  ],
+  "author": "secus217",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "files": [
+    "bin/",
+    "binaries/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "tar": "^6.1.11"
+  }
+}
