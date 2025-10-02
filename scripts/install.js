@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 const { exec } = require('child_process');
 
-const GITHUB_REPO = 'secus217/aether-cli';
+const GITHUB_REPO = 'secus217/aether-engine-cli';
 const BINARY_NAME = 'aether';
 
 function getPlatform() {

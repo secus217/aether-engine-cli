@@ -1,6 +1,6 @@
 {
   "name": "aether-deploy-cli",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Aether Engine CLI - A powerful CLI tool for deploying and managing applications with pre-built binaries",
   "main": "bin/aether.js",
   "bin": {
@@ -15,7 +15,7 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/secus217/aether-cli.git"
+    "url": "git+https://github.com/secus217/aether-engine-cli.git"
   },
   "keywords": [
     "cli",

@@ -55,7 +55,7 @@ This CLI is built with Rust for performance and reliability. The npm package inc
 ### Building from Source
 
 ```bash
-git clone https://github.com/secus217/aether-cli.git
+git clone https://github.com/secus217/aether-engine-cli.git
 cd aether-cli
 cargo build --release
 ```
@@ -72,7 +72,7 @@ MIT © secus217
 
 ## Links
 
-- [GitHub Repository](https://github.com/secus217/aether-cli)
+- [GitHub Repository](https://github.com/secus217/aether-engine-cli)
 - [npm Package](https://www.npmjs.com/package/aether-engine-cli)
 - [Aether Engine](https://github.com/secus217/aether-engine-pub)
 # aether-engine-cli
