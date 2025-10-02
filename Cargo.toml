@@ -1,6 +1,6 @@
 [package]
 name = "aether-cli"
-version = "1.1.0"
+version = "1.1.1"
 edition = "2021"
 authors = ["secus217"]
 description = "Aether Engine CLI - A powerful CLI tool for deploying and managing applications"
