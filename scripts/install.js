@@ -102,12 +102,23 @@ process.exit(1);
   console.log('⚠️  Created fallback wrapper. Please install binary manually.');
 }
 
-// Main installation process
 async function install() {
   try {
+    // First try to use the binary included in the package
+    const sourceBinaryPath = path.join(__dirname, '..', 'bin', 'aether');
+    if (fs.existsSync(sourceBinaryPath) && fs.statSync(sourceBinaryPath).size > 0) {
+      console.log('✅ Using pre-included binary');
+      // Make sure it's executable
+      if (process.platform !== 'win32') {
+        fs.chmodSync(sourceBinaryPath, '755');
+      }
+      return;
+    }
+    
+    // Fallback to download if no binary in package
     await downloadBinary();
   } catch (error) {
-    console.error('⚠️  Failed to download binary:', error.message);
+    console.error('⚠️  Failed to setup binary:', error.message);
     console.log('📦 Creating fallback wrapper...');
     createJsWrapper();
   }
