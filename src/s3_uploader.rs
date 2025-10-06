@@ -117,10 +117,10 @@ impl S3Uploader {
 
         match result {
             Ok(_) => {
-                println!("✅ Upload successful!");
+                // Don't print here - let the caller handle progress/success messages
             }
             Err(e) => {
-                println!("❌ Upload failed: {:?}", e);
+                eprintln!("❌ Upload failed: {:?}", e);
                 return Err(anyhow::anyhow!(
                     "Failed to upload to S3: {}\nBucket: {}\nKey: {}\nError: {:?}",
                     e,

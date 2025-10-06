@@ -444,7 +444,7 @@ async fn deploy_command(
         .upload_artifact(&artifact_path, app.id, &builder.get_version())
         .await?;
 
-    pb.set_message("Deploying application...");
+    pb.set_message("✅ Upload successful! Deploying application...");
 
     // Deploy the application with S3 URL (backend will generate presigned URL)
     let deployment = client
@@ -867,7 +867,7 @@ async fn s3_upload_command(file: PathBuf, _app_name: String, version: String) ->
         .upload_artifact(&file, app_id, &version)
         .await?;
 
-    utils::print_success(&format!("✅ Upload successful!"));
+    utils::print_success("✅ Upload successful!");
     utils::print_info(&format!("Artifact URL: {}", artifact_url));
     utils::print_info(&format!("Presigned URL: {}", presigned_url));
 
