@@ -1,6 +1,6 @@
 {
   "name": "aether-deploy-cli",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Aether Engine CLI - A powerful CLI tool for deploying and managing applications with pre-built binaries",
   "main": "bin/aether.js",
   "bin": {
