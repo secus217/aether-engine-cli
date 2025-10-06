@@ -53,7 +53,7 @@ fn get_project_name_from_current_dir() -> Option<String> {
 #[derive(Parser)]
 #[command(name = "aether")]
 #[command(about = "AetherEngine CLI - Fast NodeJS deployment platform")]
-#[command(version = "1.0")]
+#[command(version = "1.2.1")]
 pub struct Cli {
     #[command(subcommand)]
     pub command: Commands,
