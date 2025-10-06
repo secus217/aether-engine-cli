@@ -463,6 +463,19 @@ async fn deploy_command(
     println!("📦 Artifact: {}", style(&artifact_url).dim());
     println!("🔗 Download URL: {}", style(&presigned_url).blue());
 
+    // Web Dashboard promotion
+    println!();
+    println!("╔═══════════════════════════════════════════════════════════════════════════╗");
+    println!("║                    🌐  MANAGE YOUR APP ONLINE  🌐                        ║");
+    println!("║                                                                           ║");
+    println!("║  🎯 View, monitor and manage your deployed app at:                       ║");
+    println!("║                                                                           ║");
+    println!("║                    ➡️  https://aetherngine.com/  ⬅️                        ║");
+    println!("║                                                                           ║");
+    println!("║  ✨ Real-time monitoring, logs, metrics & deployment management!         ║");
+    println!("╚═══════════════════════════════════════════════════════════════════════════╝");
+    println!();
+
     // Show logs command hint
     utils::print_info(&format!("View logs with: aether logs {}", app_name));
     utils::print_info("Presigned URL valid for 24 hours");

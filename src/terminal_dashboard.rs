@@ -175,6 +175,45 @@ impl TerminalApp {
         }
 
         self.add_output_line("".to_string());
+        
+        // Web Dashboard info
+        self.add_output_line(
+            "╔═══════════════════════════════════════════════════════════════════════════╗"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                    🌐  WEB DASHBOARD AVAILABLE  🌐                       ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║  🎯 Manage your deployments with our beautiful web interface:            ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                    ➡️  https://aetherngine.com/  ⬅️                        ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║  ✨ Features: Visual app management, real-time monitoring, logs & more!  ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "╚═══════════════════════════════════════════════════════════════════════════╝"
+                .to_string(),
+        );
+        self.add_output_line("".to_string());
         self.add_output_line(
             "╔═══════════════════════════════════════════════════════════════════════════╗"
                 .to_string(),
@@ -829,6 +868,45 @@ impl TerminalApp {
         self.add_output_line("   Tab 2: 📁 Files       - Browse project files".to_string());
         self.add_output_line("   Tab 3: 🚀 Apps        - View & manage deployments".to_string());
         self.add_output_line("   Tab 4: � Auth        - Authentication status".to_string());
+        self.add_output_line("".to_string());
+        
+        // Web Dashboard promotion in help
+        self.add_output_line(
+            "╔═══════════════════════════════════════════════════════════════════════════╗"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                    🌐  WEB DASHBOARD AVAILABLE  🌐                       ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║  🎯 For visual app management, visit our web dashboard:                  ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                    ➡️  https://aetherngine.com/  ⬅️                        ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║                                                                           ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "║  ✨ Features: GUI management, real-time monitoring & more!               ║"
+                .to_string(),
+        );
+        self.add_output_line(
+            "╚═══════════════════════════════════════════════════════════════════════════╝"
+                .to_string(),
+        );
         self.add_output_line("".to_string());
     }
 
@@ -2640,6 +2718,18 @@ impl TerminalApp {
         self.add_output_line("🎉 Deployment completed successfully!".to_string());
         self.add_output_line(format!("📱 App ID: {}", app.id));
         self.add_output_line(format!("� Deployment ID: {}", deployment.id));
+        self.add_output_line("".to_string());
+        
+        // Web Dashboard promotion
+        self.add_output_line("╔═══════════════════════════════════════════════════════════════════════════╗".to_string());
+        self.add_output_line("║                    🌐  MANAGE YOUR APP ONLINE  🌐                        ║".to_string());
+        self.add_output_line("║                                                                           ║".to_string());
+        self.add_output_line("║  🎯 View, monitor and manage your deployed app at:                       ║".to_string());
+        self.add_output_line("║                                                                           ║".to_string());
+        self.add_output_line("║                    ➡️  https://aetherngine.com/  ⬅️                        ║".to_string());
+        self.add_output_line("║                                                                           ║".to_string());
+        self.add_output_line("║  ✨ Real-time monitoring, logs, metrics & deployment management!         ║".to_string());
+        self.add_output_line("╚═══════════════════════════════════════════════════════════════════════════╝".to_string());
 
         Ok(())
     }
